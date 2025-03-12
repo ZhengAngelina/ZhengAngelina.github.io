@@ -38,12 +38,40 @@
 		}
 		#current-position{
 			margin-right:250px;
+		}
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: ghostwhite;
+            padding: 0px 0;
+            position: fixed; /* Set the navbar to fixed position */
+  			top: 0; /* Position the navbar at the top of the page */
+  			width: 800px; /* Full width */
+        }
+        .navbar a {
+            color: teal;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #20B2AA;
+            border-radius: 5px;
+        }
 		</style>
 	
 	</head>
 	<body class="resizable">
 		<div id="container">
 		<div id="box">
+		<nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="seminars.html">Talks and seminars</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="other.html">Other</a>
+ 		</nav>
 		<header id="main-header">
 			<h1>Angelina Zheng</h1>
 			<h5>University of T&#252;bingen, Department of Mathematics <br> Auf der Morgenstelle 10, 72076 T&#252;bingen, Germany<br> 
@@ -53,7 +81,7 @@
 		<br>
 		<img id="my-img " style="border:3px solid teal;"  src="images/picture2.jpg" alt="My picture" width="200" align="right"/>
 		<section id="current-position">
-			<h2 style="color:teal">Position</h2>
+			<h2 style="color:teal">Current position</h2>
 
 			<p>		
 				I am an Alexander von Humboldt Postdoctoral fellow at the University of T&#252;bingen in the <a href="https://www.math.uni-tuebingen.de/en/research-chairs/combinatorial-algebraic-geometry/">Combinatorial Algebraic Geometry</a> group of the Department of Mathematics.
@@ -70,10 +98,12 @@
 			<h2 style="color:teal">Research interests</h2>
 			My research is in algebraic geometry and tropical geometry. I am mainly interested in moduli spaces of curves and specifically in their loci of <i>d</i>-gonal curves and their rational cohomology.
 		</section>
-		<section id="paper-preprints">
+<!--		<section id="paper-preprints">
 			<h2 style="color:teal">Publications</h2>	
 			<h4 style="color:teal">Journal papers</h4>
 			<ul>
+				<li>Wong Y. M. and Zheng A. <a href="https://arxiv.org/abs/2405.20098">Rational cohomology of &Mscr;<sub>4,1</sub></a> to appear in Mathematische Nachrichten, (2025).
+				</li>
 				<li>
 					Zheng A. <a href="https://academic.oup.com/imrn/advance-article-abstract/doi/10.1093/imrn/rnad011/7046328?redirectedFrom=fulltext">Stable cohomology of the moduli space of trigonal curves.</a>
 					<br>
@@ -86,8 +116,6 @@
 			<h4 style="color:teal">Preprints</h4>
 			<ul>
 				<li>Melo, M. and Zheng, A. <a href="https://arxiv.org/abs/2501.03903">Tropical trigonal curves</a> preprint arXiv:2501.03903, (2025).</li>
-				<li>Wong Y. M. and Zheng A. <a href="https://arxiv.org/abs/2405.20098">Rational cohomology of &Mscr;<sub>4,1</sub></a> preprint arXiv:2405.20098, (2024).
-				</li>
 				<li>Bergstr&#246;m J. and Zheng A. <a href="https://arxiv.org/abs/2312.14800">Stable cohomology of moduli spaces of hyperelliptic curves on Hirzebruch surfaces</a> preprint arXiv:2312.14800, (2023).
 				</li>
 			</ul>
@@ -119,7 +147,7 @@
 				<li><a href="https://sites.google.com/wisc.edu/atonlinemeetings/learning-seminar?authuser=0">Learning seminar</a> <em>Stable reduction of curves</em> at the Virtual school Algebraic and Tropical Online Meetings (ATOM).</li>
 			</ul>
 		</section>
-<!-- 		<section id="teaching">
+		<section id="teaching">
 			<h3 style="color:teal">Teaching activities</h3>
 			<p>I have been teaching assistant for the following courses</p>
 			<ul>
@@ -128,7 +156,7 @@
 				<li><em>Geometry</em><br>Department of Physics and Astronomy, University of Padova, University of Padova<br>Academic Year 2019/2020</li>
 				<li><em>Geometry</em><br>Department of Mathematics, University of Bologna<br>Academic Year 2017/2018</li>
 			</ul>
-		</section>-->
+		</section>
 		<section id="other">
 			<h3 style="color:teal">Outreach and other activities</h3>
 			I have participated in 
@@ -138,7 +166,7 @@
 				</li>
 				
 			</ul>
-		</section> 
+		</section> -->
 		</div>
 		</div>
 		<div style="margin-top:100px"></div>
